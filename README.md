@@ -1,6 +1,6 @@
-# Subspace Pro AI Assistant 🚀
+# Subspace AI Assistant 🚀
 
-A full-stack, real-time, and secure AI chatbot application built to showcase modern web development practices. This project was created as part of the Intern Assessment for Subspace.
+A full-stack, real-time, and secure AI chatbot application built to showcase modern web development practices.
 
 ---
 
@@ -12,7 +12,7 @@ A full-stack, real-time, and secure AI chatbot application built to showcase mod
 ---
 ## About The Project
 
-**Subspace Pro** is a sophisticated AI assistant designed for real-time, intelligent conversations. The application is built from the ground up on a modern, serverless, GraphQL-native architecture. It features a polished, responsive user interface with advanced conversational features like chat history management, markdown rendering, and the ability to edit and regenerate responses.
+**Subspace** is a sophisticated AI assistant designed for real-time, intelligent conversations. The application is built from the ground up on a modern, serverless, GraphQL-native architecture. It features a polished, responsive user interface with advanced conversational features like chat history management, markdown rendering, and the ability to edit and regenerate responses.
 
 The entire project adheres strictly to the assignment's requirements, focusing on security, a GraphQL-only API, and a clean separation of concerns between the frontend and a secure automation backend.
 
@@ -34,7 +34,7 @@ The entire project adheres strictly to the assignment's requirements, focusing o
 * ✅ **Secure Authentication:** Full email/password sign-in and sign-up flow.
 * ✅ **Data Privacy:** Strict Row-Level Security (RLS) ensures users can only ever access their own chat data.
 * ✅ **Real-time Messaging:** A live chat experience built with GraphQL Subscriptions.
-* ✅ **Intelligent AI:** The "Subspace Pro" assistant has conversational memory and is powered by advanced prompt engineering.
+* ✅ **Intelligent AI:** The "Subspace" assistant has conversational memory and is powered by advanced prompt engineering.
 * ✅ **Rich Text Formatting:** Full Markdown rendering for chatbot responses, including styled code blocks with a "copy-to-clipboard" function.
 * ✅ **Advanced Chat Controls:**
     * Edit and rename chat titles.
@@ -64,8 +64,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Chaithanyaina/T-ai-chatbot-app.git
-    cd T-ai-chatbot-app
+    git clone https://github.com/delvinjoseph13/subspace_assignment.git
+    cd subspace_assignment
     ```
 2.  **Install dependencies:**
     ```bash
@@ -90,16 +90,3 @@ To run this project locally, follow these steps:
     npm run dev
     ```
 
-    
-6.  **Future Enhancements**
-
-The current application serves as a robust and feature-complete foundation. The following enhancements are planned to further expand its capabilities:
-
-* **File and Image Uploads:** Integrate Nhost Storage to allow users to upload images and documents. This would be coupled with a multi-modal AI model, enabling the chatbot to analyze, summarize, and discuss the content of the uploaded files.
-
-* **Global Chat Search:** Implement a powerful, full-text search functionality, allowing users to instantly find specific messages or information across their entire conversation history.
-
-* **Deep Personal Finance Integration:** Further develop the "Subspace Pro" persona into an indispensable financial assistant by adding specialized tools. This could include features for:
-    * Analyzing spending patterns from uploaded bank statements.
-    * Tracking subscription price changes over time.
-    * Offering proactive savings advice based on user data.

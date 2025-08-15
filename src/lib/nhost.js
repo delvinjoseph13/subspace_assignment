@@ -1,8 +1,9 @@
 import { NhostClient } from '@nhost/react';
 
 const nhost = new NhostClient({
-  subdomain: 'zbrhftolgwmfprzoailu',
-  region: 'eu-central-1'  // your project region (Frankfurt)
+  subdomain: import.meta.env.VITE_NHOST_SUBDOMAIN,
+  region: import.meta.env.VITE_NHOST_REGION
 });
 
 export { nhost };
+

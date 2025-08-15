@@ -17,11 +17,12 @@ export const INSERT_USER_MESSAGE_MUTATION = gql`
 `;
 
 export const SEND_MESSAGE_ACTION = gql`
-  mutation SendMessage($chat_id: uuid!, $message: String!) {
-    sendMessage(input: { chat_id: $chat_id, message: $message }) {
-      reply
-    }
+mutation SendMessage($chat_id: uuid!, $user_id: uuid!, $message: String!) {
+  sendMessage(input: { chat_id: $chat_id, user_id: $user_id, message: $message }) {
+    reply
   }
+}
+
 `;
 export const UPDATE_CHAT_TITLE_MUTATION = gql`
   mutation UpdateChatTitle($id: uuid!, $title: String!) {

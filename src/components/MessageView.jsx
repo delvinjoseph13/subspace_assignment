@@ -156,7 +156,15 @@ const MessageView = ({ chatId, isSidebarOpen, setIsSidebarOpen }) => {
     setNewMessage('');
     try {
       await insertUserMessage({ variables: { chat_id: chatId, content: messageContent } });
-      await sendMessageAction({ variables: { chat_id: chatId, message: String(messageContent) } });
+      // await sendMessageAction({ variables: { chat_id: chatId,userId: userData?.id, message: String(messageContent) } });
+      await sendMessageAction({ 
+  variables: { 
+    chat_id: chatId,
+    user_id: userData?.id,  
+    message: String(messageContent)
+  }
+});
+
     } catch (err) {
       toast.error(`Failed to send message: ${err.message}`);
       setNewMessage(messageContent);
@@ -179,9 +187,17 @@ const MessageView = ({ chatId, isSidebarOpen, setIsSidebarOpen }) => {
       await updateMessage({
         variables: { id: editingMessageId, content: editedContent }
       });
+      // await sendMessageAction({
+      //   variables: { chat_id: chatId, message: String(editedContent) }
+      // });
       await sendMessageAction({
-        variables: { chat_id: chatId, message: String(editedContent) }
-      });
+  variables: { 
+    chat_id: chatId, 
+    user_id: userData?.id,  
+    message: String(editedContent) 
+  }
+});
+
     } catch (err) {
       toast.error(`Error regenerating response: ${err.message}`);
     } finally {
@@ -205,7 +221,7 @@ const MessageView = ({ chatId, isSidebarOpen, setIsSidebarOpen }) => {
             Hi, {userData?.displayName || 'there'}!
           </h2>
           <p className="mt-2 text-gray-600 dark:text-gray-400">
-            I'm Subspace Pro, your personal assistant.
+            I'm Subspace, your personal assistant.
           </p>
           <p className="mt-1 text-gray-600 dark:text-gray-400">
             Select a chat on the left to get started.

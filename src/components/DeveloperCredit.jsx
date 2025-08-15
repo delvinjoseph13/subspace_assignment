@@ -10,12 +10,12 @@ const DeveloperCredit = () => {
       className="fixed bottom-4 right-4 z-50"
     >
       <a
-        href="https://www.linkedin.com/in/chaithanyainaganti/" // Optional: Link to your profile
+        href="https://www.linkedin.com/in/delvin-joseph-b01139279/" // Optional: Link to your profile
         target="_blank"
         rel="noopener noreferrer"
         className="px-3 py-1.5 bg-black/40 dark:bg-white/10 text-white dark:text-gray-300 text-xs font-semibold rounded-full backdrop-blur-sm hover:bg-black/60 dark:hover:bg-white/20 transition-colors"
       >
-        Developed by Chaithanya Inaganti
+        Developed by Delvin Joseph
       </a>
     </motion.div>
   );
