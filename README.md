@@ -6,8 +6,8 @@ A full-stack, real-time, and secure AI chatbot application built to showcase mod
 
 ### **✨ Live Demo & Showcase**
 
-* **Deployed Site:** `[https://subspaceaichatbot.netlify.app/](https://chatbotsubspacepro.netlify.app/sign-in)`
-* **Video Walkthrough:** `[https://tinyurl.com/44fpbw33](https://tinyurl.com/4mvecbre)`
+* **Deployed Site:** `(https://chatbotsubspacepro.netlify.app/sign-in)`
+* **Video Walkthrough:** `(https://tinyurl.com/4mvecbre)`
 
 ---
 ## About The Project
